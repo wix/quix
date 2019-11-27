@@ -91,14 +91,14 @@ As an alternative, you can also use an external MySQL database, by specifying so
 <li><p>DB_PASS - defaults to empty password</p></li>
 <li><p>DB_HOST - defaults to <code>db</code></p></li>
 <li><p>DB_PORT - defaults to <code>3306</code></p></li>
-<li><p>DB_AUTO_MIGRATE - this sets the <a href="https://typeorm.io/#/connection-options">Typeorm</a> <code>synchronize</code> flag. Defaults to <code>false</code>. You probably only want to set this when running locally for development or if you don't care at all about your data.</p></li>
+<li><p>DB_AUTO_MIGRATE - this sets the <a href="https://typeorm.io/#/connection-options">TypeORM</a> <code>synchronize</code> flag. Defaults to <code>false</code>. You probably only want to set this when running locally for development or if you don't care at all about your data.</p></li>
 </ul>
 <h4><a class="anchor" aria-hidden="true" id="user-authentication"></a><a href="#user-authentication" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>User authentication</h4>
 <p>Quix can work in two modes: multi-user mode, authenticated with <a href="https://console.developers.google.com/apis/credentials">Google OAuth</a>, or in a single-user mode. This is controlled by the following variables:</p>
 <ul>
-<li>AUTH_TYPE - can be <code>fake</code> or <code>google</code>. defaults to <code>fake</code> (single-user mode).</li>
+<li>AUTH_TYPE - can be <code>fake</code> or <code>google</code>. Defaults to <code>fake</code> (single-user mode).</li>
 </ul>
-<p>If you use google oauth, you must supply the clientId and the secret:</p>
+<p>If you use Google OAuth, you must supply the clientId and the secret:</p>
 <ul>
 <li>GOOGLE_SSO_CLIENT_ID</li>
 <li>GOOGLE_SSO_SECRET</li>
